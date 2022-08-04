@@ -1,0 +1,232 @@
+/* element selectors */
+
+footer {
+    display: block;
+    background-color: #63D7D9;
+    color: blue;
+    padding: 5px;
+    margin-top: 5%;
+    text-align: center;
+}
+
+header {
+    /* image */
+    background-image: url(../images/vioflower.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    /* text */
+    padding-left: 5%;
+    padding-top: 0.7%;
+    color: aqua
+}
+
+main {
+    margin: auto;
+    margin-top: 50px;
+    width: 80%;
+}
+
+nav {
+    background-color: transparent;
+    margin-bottom: 30px;
+    overflow: hidden;
+    padding-left: 5%;
+    margin-top: -50px;
+}
+
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    color: cyan;
+    display: block;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* <nav></nav> */
+/* color - refers to text color of nav */
+/* display - refers to nav display block which is modify by padding */
+/* padding 10x refers to distance between height distance of two navigation tab when navigation tab is not a single line - you can observe this when the window is modified to smaller window and the navigation title do not fit the window width then the navigation is not single line but multiple line the distance between line is 10x */
+/* padding 15x refers to the distance between the navigation tab */
+/* text-align  */
+/* text-decoration - refers s to whether navigation text has underline, strike through ... etc. by default navigation text has underline to remove is set to none */
+
+nav li a:hover:not(.active) {
+    background-color: transparent;
+    color: white;
+}
+
+/* nav li a: hover:not(.active) this command makes the navigation tab high light when the mouse pointer point on specific navigation tab*/
+/* background-color refers to high light */
+/* color refers to text color */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* nav ul refers to navigation unordered list making the list-style-type to none eliminate the list dot */
+
+table th td {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border-bottom: 0;
+    padding: 4px 20px;
+    text-align: center;
+}
+
+td {
+    color: blueviolet;
+}
+
+th {
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background: lightcyan;
+}
+
+tr:nth-child(odd) {
+    background: lightgreen;
+}
+
+/* class selectors */
+
+.page-active {
+    color: lime;
+}
+
+.bck-color {
+    background-color: aqua;
+}
+
+.box-image1 {
+    border: 0px solid violet;
+    padding: 0px;
+    background-color: transparent;
+    height: 350px;
+    width: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.center-item {
+    text-align: center;
+}
+
+.box-image2 {
+    border: 0px solid violet;
+    padding: 0px;
+    background-color: transparent;
+    height: 350px;
+    width: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.author-image {
+    border: 1px solid green;
+    padding: 0px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.management-image {
+    border: 1px solid green;
+    padding: 0px;
+    height: 200px;
+    border-radius: 15%;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #9620A1;
+    padding: 5px;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.headr {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.float-align {
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+    height: 50px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 150px;
+    width: auto;
+    color: lightgreen;
+}
+
+.column_image {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    text-align: center;
+}
+
+/* display grid - every element in html represent as text box or box, display:
+grid makes the text box align as grid where the text box is arranged in series as according 
+grid template column; 1fr represents as one frame means; the whole window is divided by number of frame.
+From the above example means the whole window is divided by two box*/
+
+.julia-table {
+    position: relative;
+    float: right;
+    background-color: aquamarine;
+    border-radius: 15px;
+    box-shadow: -0.5em 0.3em 0.4em #7E84F7;
+    color: #75163F;
+    margin-left: 1em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.overflow {
+    display: grid;
+    grid-template-columns: 0.8fr 1.4fr 0.8fr;
+    padding: 2px;
+}
+
+.paddng-julia {
+    margin-left: 17%;
+}
+
+
+.course-descrip {
+    background-color: #5DCACC;
+    margin: auto;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.5em;
+    width: 70%;
+    border-radius: 5%;
+
+}
+
+/* @media rules */
